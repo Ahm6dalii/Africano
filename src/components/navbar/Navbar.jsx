@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Avatar, Dropdown, Navbar } from "flowbite-react";
+import { Navbar } from "flowbite-react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, NavLink } from "react-router-dom";
 import { changeMode } from "../../redux/reducers/modeSlice";
 import { logOutUser } from "../../redux/reducers/userAuthSlice";
 import useCart from "../../hooks/useCart";
 import socket from "../../socket.io/socket";
-import { Mail, Phone, Facebook, Twitter, Instagram } from 'lucide-react';
+import {Phone, Facebook, Instagram } from 'lucide-react';
 import { HiMenuAlt3, HiX } from 'react-icons/hi';
 import { motion, AnimatePresence } from 'framer-motion';
 import logoLight from "../../assets/logo/logo.li.png";
@@ -56,9 +56,10 @@ const useScrollDirection = () => {
 // Top Navigation Component
 const TopNav = () => {
   const isVisible = useScrollDirection();
+  const { translation } = useSelector(state => state.lang)
 
   return (
-    <div 
+    <div dir='ltr'
       className={`w-full bg-orange-600 dark:bg-orange-900 text-white fixed top-0 left-0 right-0 z-[1001] transition-transform duration-300 ${
         isVisible ? 'transform translate-y-0' : 'transform -translate-y-full'
       }`}
@@ -68,14 +69,19 @@ const TopNav = () => {
           {/* Contact Information */}
           <div className="flex items-center space-x-4 text-sm">
             <a href="tel:+1234567890" className="flex items-center hover:text-orange-200">
-              <Phone className="w-4 h-4 mr-2" />
+              <h4 className='me-2'>{translation.orderNow}</h4>
+              <Phone className="w-4 h-4 me-2" />
               <span className="hidden sm:inline">+201020142743</span>
             </a>
           
           </div>
           
           {/* Social Links */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-2">
+          <h4 className='me-1'>{translation.followUs}
+            <i className='fa-solid fa-angle-double-right ms-2'></i>
+          </h4>
+
             <a href="https://www.facebook.com/profile.php?id=100090617247433" className="hover:text-orange-200 transition-colors">
               <Facebook className="w-4 h-4" />
             </a>

@@ -306,5 +306,12 @@ export const Ar = {
   updateInfo: 'تحديث المعلومات',
   updatePassword: 'تحديث كلمة المرور',
   changeImage: 'تغيير الصورة',
-  changeProfileImg: 'تحديث صورة الملف الشخصي'
+  changeProfileImg: 'تحديث صورة الملف الشخصي',
+
+ourMenu: "قائمتنا",
+orderNow: "اطلب الآن",
+downloadMenu: "تحميل المنيو",
+followUs:"تابعنا",
+viewMenu: "عرض المنيو"
+
 }

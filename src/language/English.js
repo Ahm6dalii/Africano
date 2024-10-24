@@ -292,4 +292,10 @@ export const En = {
   updatePassword: "Update Password",
   changeImage: "Change Image",
   changeProfileImg: "Update Profile Picture",
+
+  ourMenu:"Our Menu",
+  orderNow:"Order Now",
+  downloadMenu:"Download Menu",
+  followUs:"Follow Us",
+  viewMenu:"View Menu"
 };   

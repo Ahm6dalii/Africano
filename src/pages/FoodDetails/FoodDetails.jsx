@@ -210,11 +210,11 @@ const FoodDetails = () => {
                             </div>
 
                             <div className="flex flex-col md:flex-row items-start justify-start md:mt-20 w-full mr-7">
-                                <div className="w-full md:w-auto px-2 flex justify-start">
+                                {/* <div className="w-full md:w-auto px-2 flex justify-start">
                                     <button onClick={handleAddToCart} className="w-full md:w-56 bg-red-900 hover:bg-red-600  text-white py-2 px-4 rounded-full font-bold  ">
                                         {translation.confirm}
                                     </button>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>}

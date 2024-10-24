@@ -1,30 +1,29 @@
-import React from 'react'
-import { useSelector } from 'react-redux'
+import React from 'react';
+import { MapPin } from 'lucide-react';
 
-export default function MapLocation() {
-  const { translation } = useSelector(state => state.lang)
-
+const MapLocation = ({ translation }) => {
   return (
-    <div className="mt-12">
-      <h2 className="text-3xl font-bold text-red-500 mb-4 text-center" style={{ fontFamily: "Oswald" }}>
-        <i className="fa-solid fa-location-dot pe-4"></i>
-        {translation.findUs}
+    <section className="w-full sm:px-6 py-8 md:py-12">
+         <h2 className="text-2xl md:text-3xl font-bold text-red-500 mb-6 text-center flex items-center justify-center gap-2">
+        <MapPin className="w-6 h-6" />
+        <span className="font-['Oswald']">{translation?.findUs || 'Find Us'}</span>
       </h2>
-      <div className="w-full h-72 rounded-lg overflow-hidden shadow-inner">
+      <div className="w-full rounded-lg overflow-hidden shadow-lg mb-6">
         <iframe 
-          width="100%" 
-          height="100%" 
+          className="w-full" 
+          height={300} 
           frameBorder="0" 
           scrolling="no" 
           marginHeight="0" 
           marginWidth="0" 
           id="gmap_canvas" 
-          src="https://maps.google.com/maps?width=100%25&amp;height=100%25&amp;hl=en&amp;q=Africano%20pizza&amp;pasta%20ras%20gharib+(Affricano%20Restaurant)&amp;t=&amp;z=19&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-          title="Affricano Restaurant Location"
-          loading="lazy"
-          allowFullScreen
-        ></iframe>
+          src="https://maps.google.com/maps?width=550&amp;height=306&amp;hl=en&amp;q=africano%20pizza%20ra's%20ghareb+(africano%20pizza)&amp;t=&amp;z=19&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        />
       </div>
-    </div>
-  )
-}
+      
+    
+    </section>
+  );
+};
+
+export default MapLocation;

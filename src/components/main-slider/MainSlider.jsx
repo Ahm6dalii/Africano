@@ -13,6 +13,7 @@ import menuPDF from '../../assets/resturant/menu.pdf'
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { motion } from 'framer-motion';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 const customStyles = `
   .swiper-pagination {
@@ -216,17 +217,17 @@ export default function MainSlider() {
                     <div className='flex flex-wrap gap-4 justify-center'>
                         <button 
                             onClick={handleDownload}
-                            className="custom-button download-button"
+                            className=" flex items-center gap-2 custom-button download-button"
                         >
-                            <span className="button-icon">⬇️</span>
-                            Download Menu
+                          <i className="fa-solid fa-download "></i>
+                            {translation.downloadMenu}
                         </button>
-                        <button 
-                            className="custom-button menu-button"
+                        <Link to="/menu" 
+                            className="flex items-center gap-2 custom-button menu-button"
                         >
-                            <span className="button-icon">🍽️</span>
-                            View Menu
-                        </button>
+                        <i className="fa-solid fa-pizza-slice"></i>
+                            {translation.downloadMenu}
+                        </Link>
                     </div>
                 </div>
 

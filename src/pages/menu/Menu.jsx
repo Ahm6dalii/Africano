@@ -18,7 +18,7 @@ export default function Menu() {
       </p>
     </div>
     <CatogeryTab></CatogeryTab>
-    <div className='container mx-auto px-4 '>
+    <div className='container mx-auto pb-6 px-4 '>
  
     <Outlet></Outlet>
     </div>

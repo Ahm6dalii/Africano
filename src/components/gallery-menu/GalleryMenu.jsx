@@ -8,11 +8,13 @@ import img5 from '../../assets/menu/5.jpg'
 import img6 from '../../assets/menu/6.jpg'
 import img7 from '../../assets/menu/7.jpg'
 import img8 from '../../assets/menu/8.jpg'
+import { useSelector } from 'react-redux';
 
 const Gallery = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [sliderIndex, setSliderIndex] = useState(0);
+  const { translation } = useSelector(state => state.lang)
 
   // Using placeholder images since we can't import external images
    
@@ -122,8 +124,10 @@ const Gallery = () => {
 
   return (
     <div className=" mx-auto px-4 py-8 bg-white dark:bg-[#222222]">
-      <h2 className="text-3xl mb-8">Our Menu</h2>
-      
+      <h3 className=" flex items-center gap-2 justify-center text-2xl sm:text-3xl md:text-5xl font-extrabold  text-orange-500 dark:text-orange-200  mb-8 text-center">
+      <i className="fa-brands fa-readme"></i>
+      {translation.ourMenu}
+            </h3>
       {/* Slider Container */}
       <div dir='ltr'  className="relative">
         {/* Navigation Buttons */}
