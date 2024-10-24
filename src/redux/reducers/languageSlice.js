@@ -11,8 +11,8 @@ const translation={
     
 }
 const  initialState={
-    language:storageLang?storageLang:'en',
-    translation:storageTrans?storageTrans:translation[storageLang?storageLang:'en']
+    language:storageLang?storageLang:'ar',
+    translation:storageTrans?storageTrans:translation[storageLang?storageLang:'ar']
 } 
 const languageSlice=createSlice({
     name:"language",
