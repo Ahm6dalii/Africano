@@ -68,7 +68,7 @@ const TopNav = () => {
         <div className="flex flex-wrap items-center justify-between">
           {/* Contact Information */}
           <div className="flex items-center space-x-4 text-sm">
-            <a href="tel:+1234567890" className="flex items-center hover:text-orange-200">
+            <a href="tel:+201020142743" className="flex items-center hover:text-orange-200">
               <h4 className='me-2'>{translation.orderNow}</h4>
               <Phone className="w-4 h-4 me-2" />
               <span className="hidden sm:inline">+201020142743</span>

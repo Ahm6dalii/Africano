@@ -31,7 +31,7 @@ export default function CatogeryTab() {
 
   return (
     <>
-    <ul className='flex flex-wrap flex-row gap-5  w-fit mb-4 m-auto '>
+    <ul className='flex justify-center px-3 flex-wrap flex-row gap-5  w-fit mb-4 m-auto '>
     {data?.map((item,index)=>{
         return  <li  key={index} className=' ' title={`${item.name[language]}`} >
             <NavLink to={item._id} className={(({isActive})=>'transition duration-300 p-1 ' +  (isActive?' font-semibold border-b-2 border-b-orange-200   text-orange-500 ':'font-light'))}>{item.name[language]}</NavLink>
