@@ -226,7 +226,7 @@ export default function MainSlider() {
                             className="flex items-center gap-2 custom-button menu-button"
                         >
                         <i className="fa-solid fa-pizza-slice"></i>
-                            {translation.downloadMenu}
+                            {translation.viewMenu}
                         </Link>
                     </div>
                 </div>
