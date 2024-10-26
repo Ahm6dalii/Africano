@@ -298,5 +298,5 @@ export const En = {
   downloadMenu:"Download Menu",
   followUs:"Follow Us",
   viewMenu:"View Menu",
-  bestDishes:"bestDishes",
+  bestDishes:"Best Dishes",
 };   
