@@ -6,7 +6,7 @@ import Contact from "./../cotact/Contact";
 import { Helmet } from "react-helmet-async";
 import MainSlider from "../../components/main-slider/MainSlider";
 import Gallery from "../../components/gallery-menu/GalleryMenu";
-import FoodCarousel from "../../components/foodCarousel/FoodCarousel";
+import FoodCarousel from "../../components/FoodCarousel/FoodCarousel";
 
 export default function Home() {
   const { translation } = useSelector((state) => state.lang);
