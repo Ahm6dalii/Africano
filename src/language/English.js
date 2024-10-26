@@ -297,5 +297,6 @@ export const En = {
   orderNow:"Order Now",
   downloadMenu:"Download Menu",
   followUs:"Follow Us",
-  viewMenu:"View Menu"
+  viewMenu:"View Menu",
+  bestDishes:"bestDishes",
 };   

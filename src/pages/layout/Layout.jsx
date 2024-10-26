@@ -29,9 +29,10 @@ export default function LayOut() {
               <Outlet></Outlet>
             </div>
           </div>
-          {user && <Chat />}
-
+          {/* {user && <Chat />} */}
+          {/* <div className={`  ${mode == 'light' ? style.bgImgWhite : style.bgImgDark}`}> */}
           <Footer></Footer>
+        {/* </div> */}
         </div>
       </div>
 

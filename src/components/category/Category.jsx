@@ -11,7 +11,7 @@ export default function Category({category}) {
   return (
     <div className="col-span-12 md:col-span-6 lg:col-span-4 mt-3 mx-3">
         <Link to={`/menu/${category._id}`}>
-    <Card className={`h-[300px] max-w-sm m-auto ${mode=='light'?'bg-catBackLight':'bg-catBack'} bg-no-repeat bg-center bg-cover p-24 `}>
+    <Card className={`h-[300px] max-w-sm m-auto ${mode=='light'?'catBackLight':'catBack'} bg-no-repeat bg-center bg-cover p-24 `}>
     <h5 className="text-2xl text-center font-bold tracking-tight  ">
         {language =="en"? category?.name?.en : category?.name?.ar}
     </h5>

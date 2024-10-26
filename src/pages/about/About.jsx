@@ -33,39 +33,10 @@ export default function About() {
           <i className="fa-brands fa-font-awesome"></i>
           {translation.aboutUs}
         </h3>
-        <div className='pb-6'>
-          <p style={{ "fontFamily": " Caveat" }} className="text-red-500 text-4xl text-center ">
-            {translation.ourStory}
-          </p>
-          <motion.p style={{ "fontFamily": " Oswald" }} className="text-3xl text-center"
-            variants={pVariants} initial="hidden" animate="visible"
-            transition={{ delay: 0.4, duration: 1, ease: "easeOut" }} >
-            {translation.luxuryRestaurant}
-          </motion.p>
-
-
-        </div>
         <motion.div className="grid  grid-cols-1 md:grid-cols-2 gap-8"
           variants={pVariants} initial="hidden" animate="visible"
           transition={{ delay: .7, duration: 1, ease: "easeOut" }}>
           <div>
-            <img src={cheif} alt="Restaurant view" className="w-full  object-cover  rounded-t-full dark:shadow-md  dark:shadow-red-300 " />
-          </div>
-          <div>
-            <motion.div variants={pVariants} initial="hidden" animate="visible"
-              transition={{ delay: 0.9, duration: 1, ease: "easeOut" }}>
-              <p style={{ "fontFamily": " Caveat" }} className="mt-2 text-red-500 text-3xl ">
-                {translation.ourChef}
-              </p>
-              <p style={{ "fontFamily": " Oswald" }} className="text-3xl py-6  ">
-                <span style={{ "fontFamily": " Oswald" }} className="text-gray-400 px-2 ">
-                  {translation.masterChef}</span>
-                {translation.chefName}
-              </p>
-              <p style={{ "fontFamily": " Oswald" }} className="text-3xl">
-                {translation.masterChefAd}
-              </p>
-            </motion.div>
             <motion.div variants={pVariants} initial="hidden" animate="visible"
               transition={{ delay: 1.3, duration: 1, ease: "easeOut" }}>
               <p style={{ "fontFamily": " Caveat" }} className=" mt-3 text-red-500 text-3xl ">
@@ -75,24 +46,15 @@ export default function About() {
                 {translation.ourFutureAd}
               </p>
             </motion.div>
-
-
-          </div>
+         </div>
 
         </motion.div>
-        <div className='pb-12'>
-          <p style={{ "fontFamily": " Caveat" }} className="mt-3 text-red-500 text-3xl">
-            {translation.weBest}
-          </p>
-          <p style={{ "fontFamily": " Oswald" }} className="text-3xl">
-            {translation.weBestAd}
-          </p>
-        </div>
+    
         <div className='grid lg:grid-cols-3 md:grid-cols-2 gap-4 place-content-stretch'
         >
           <div className='pb-2'>
-            <img src={img1} alt="Restaurant view" className="pb-6 " />
-            <p className='text-2xl pb-3' style={{ "fontFamily": " Oswald" }}>
+            <img src={img1} alt="Restaurant view" className="pb-6 block mx-auto" />
+            <p className='text-2xl pb-3 text-center' style={{ "fontFamily": " Oswald" }}>
               {translation.premiumServices}
             </p>
             <p>
@@ -101,8 +63,8 @@ export default function About() {
 
           </div>
           <div className='pb-2'>
-            <img src={img2} alt="Restaurant view" className="pb-6 " />
-            <p className='text-2xl pb-3' style={{ "fontFamily": " Oswald" }}>
+            <img src={img2} alt="Restaurant view" className="pb-6 block mx-auto" />
+            <p className='text-2xl pb-3 text-center' style={{ "fontFamily": " Oswald" }}>
               {translation.freeDelivery}
             </p>
             <p>
@@ -111,8 +73,8 @@ export default function About() {
 
           </div>
           <div className='pb-2'>
-            <img src={img3} alt="Restaurant view" className="pb-6 " />
-            <p className='text-2xl pb-3' style={{ "fontFamily": " Oswald" }}>
+            <img src={img3} alt="Restaurant view" className="pb-6 block mx-auto " />
+            <p className='text-2xl pb-3 text-center' style={{ "fontFamily": " Oswald" }}>
               {translation.PrimeLocation}
             </p>
             <p>

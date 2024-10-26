@@ -6,6 +6,7 @@ import Contact from "./../cotact/Contact";
 import { Helmet } from "react-helmet-async";
 import MainSlider from "../../components/main-slider/MainSlider";
 import Gallery from "../../components/gallery-menu/GalleryMenu";
+import FoodCarousel from "../../components/foodCarousel/FoodCarousel";
 
 export default function Home() {
   const { translation } = useSelector((state) => state.lang);
@@ -21,13 +22,14 @@ export default function Home() {
         <main className=" text-center">
         <MainSlider/>
         <Gallery/>
+        <FoodCarousel/>
 
           {/* about */}
-          <About />
+          {/* <About /> */}
 
           {/* contact */}
 
-          <Contact />
+          <Contact marginTop={"marginTop"}/>
         </main>
       </div>
     </>

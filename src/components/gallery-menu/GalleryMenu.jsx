@@ -123,7 +123,7 @@ const Gallery = () => {
   }, [isModalOpen, closeModal, goToNextImage, goToPreviousImage]);
 
   return (
-    <div className=" mx-auto px-4 py-8 bg-white dark:bg-[#222222]">
+    <div className=" mx-auto px-4 py-8">
       <h3 className=" flex items-center gap-2 justify-center text-2xl sm:text-3xl md:text-5xl font-extrabold  text-orange-500 dark:text-orange-200  mb-8 text-center">
       <i className="fa-brands fa-readme"></i>
       {translation.ourMenu}

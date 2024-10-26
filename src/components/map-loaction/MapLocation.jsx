@@ -3,7 +3,7 @@ import { MapPin } from 'lucide-react';
 
 const MapLocation = ({ translation }) => {
   return (
-    <section className="w-full sm:px-6 py-8 md:py-12">
+    <section className="w-full sm:px-6 py-4 md:py-12">
          <h2 className="text-2xl md:text-3xl font-bold text-red-500 mb-6 text-center flex items-center justify-center gap-2">
         <MapPin className="w-6 h-6" />
         <span className="font-['Oswald']">{translation?.findUs || 'Find Us'}</span>

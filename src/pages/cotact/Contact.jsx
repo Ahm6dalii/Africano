@@ -6,7 +6,7 @@ import MapLocation from '../../components/map-loaction/MapLocation';
 import { Helmet } from 'react-helmet-async';
 
 
-export default function Contact() {
+export default function Contact({marginTop}) {
     const { translation } = useSelector(state => state.lang)
     const pVariants = {
         hidden: {
@@ -20,7 +20,8 @@ export default function Contact() {
 
     return (
 
-        <div className=" pt-28 container mx-auto px-4 py-2 shadow-2xl  border rounded-3xl max-w-7xl ">
+        <div className={`py-2 ${marginTop?'mt-2':'mt-20'}`}>
+        <div className="container mx-auto px-4 py-2 pt-4  rounded-3xl max-w-7xl">
             <Helmet>
                 <title>Contact</title>
                 <meta name="description" content="About Page" />
@@ -44,9 +45,9 @@ export default function Contact() {
                     <motion.div
                         variants={pVariants} initial="hidden" animate="visible"
                         transition={{ delay: 0.7, duration: 1, ease: "easeOut" }}>
-                        <h2 style={{ "fontFamily": " Caveat" }} className="text-4xl font-bold  text-red-500 mb-4">
+                        <h3 style={{ "fontFamily": " Caveat" }} className="text-xl font-bold  text-red-500 mb-2">
                             {translation.ContactInformation}
-                        </h2>
+                        </h3>
                         <p className="text-lg  leading-loose mb-6">
                             {translation.ContactInformationAd}
                         </p>
@@ -87,6 +88,7 @@ export default function Contact() {
 
             <MapLocation></MapLocation>
 
+        </div>
         </div>
 
     )

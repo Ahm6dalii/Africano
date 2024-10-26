@@ -312,6 +312,7 @@ ourMenu: "قائمتنا",
 orderNow: "اطلب الآن",
 downloadMenu: "تحميل المنيو",
 followUs:"تابعنا",
-viewMenu: "عرض المنيو"
+viewMenu: "عرض المنيو",
+bestDishes:"أطباقنا الرئيسية",
 
 }
